@@ -16,8 +16,25 @@ const notFind: RouteRecordRaw = {
   }
 }
 
+const pages: RouteRecordRaw = {
+  path: '/',
+  redirect: '/applaction',
+  component: () => import('@/pages/layout/index.vue'),
+  meta: {
+  },
+  children: [
+    applaction,
+    authConfig,
+    auxiliary,
+    game,
+    networkAndInternet,
+    privacy,
+    update,
+    useInfo
+  ]
+}
 
 export const router = createRouter({
   history: createWebHistory('/'),
-  routes: [ applaction, authConfig,auxiliary, game,networkAndInternet,  privacy,  update, useInfo, notFind ]
+  routes: [  notFind, pages ]
 })
