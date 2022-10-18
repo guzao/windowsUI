@@ -1,7 +1,5 @@
 <template>
-  <div>
-    system update 
-  </div>
+  <Pcard />
 </template>
 
 <script lang="ts" setup>

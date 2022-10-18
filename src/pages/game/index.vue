@@ -1,7 +1,5 @@
 <template>
-  <div>
-    游戏
-  </div>
+  <Pcard />
 </template>
 
 <script lang="ts" setup>

@@ -1,12 +1,9 @@
 <template>
-  <div>
-    <n-card v-for="item in 20" :key="item" class="mb-2">
-      userinfo
-    </n-card>
-  </div>
+  <Pcard />
 </template>
 
 <script lang="ts" setup>
+import { MicOffCircle } from '@vicons/ionicons5';
 </script>
 
 <style lang="scss" scoped></style>

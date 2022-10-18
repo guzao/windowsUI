@@ -1,7 +1,5 @@
 <template>
-  <div>
-    隐私
-  </div>
+  <Pcard />
 </template>
 
 <script lang="ts" setup>

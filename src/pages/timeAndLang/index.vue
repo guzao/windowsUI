@@ -1,7 +1,5 @@
 <template>
-  <div>
-    时间和语言
-  </div>
+  <Pcard />
 </template>
 
 <script lang="ts" setup>

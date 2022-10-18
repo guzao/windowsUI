@@ -1,7 +1,5 @@
 <template>
-  <div>
-    wifi and internter
-  </div>
+  <Pcard />
 </template>
 
 <script lang="ts" setup>

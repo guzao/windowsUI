@@ -1,7 +1,5 @@
 <template>
-  <div>
-    辅助
-  </div>
+  <Pcard />
 </template>
 
 <script lang="ts" setup>

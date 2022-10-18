@@ -1,7 +1,5 @@
 <template>
-  <div>
-    用户配置
-  </div>
+  <Pcard />
 </template>
 
 <script lang="ts" setup>

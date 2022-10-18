@@ -34,6 +34,8 @@ const pages: RouteRecordRaw = {
   ]
 }
 
+export const Mneu = pages.children
+
 export const router = createRouter({
   history: createWebHistory('/'),
   routes: [  notFind, pages ]
