@@ -1,32 +1,25 @@
 <template>
-  <div class="flex w_layout">
+  <n-layout style="height: 100vh; padding: 40px 0;" has-sider>
+    
+    <n-layout-sider >
+      <Menu />
+    </n-layout-sider>
 
-    <div class="w_slider">
-      <ul>
-        <li v-for="item in 10" class="hover:bg-gray-50" :key="item"> 
-          菜单{{ item }}
-        </li>
-      </ul>
-    </div>
+    <n-layout>
+      <n-scrollbar style="max-height: 100vh; padding: 0 200px;">
+        <n-layout-content class="h-full">
+          <router-view></router-view>
+        </n-layout-content>
+      </n-scrollbar>
+    </n-layout>
 
-    <div class="w_main h-full flex-1">
-      <router-view> </router-view>
-    </div>
-
-  </div>
+  </n-layout>
 </template>
 
-<style lang="scss" scoped>
-.w_layout {
-  height: 100vh;
-  .w_slider {
-    width: 300px;
-    &  li {
-      line-height: 36px;
-      margin: 2px 0;
-    }
-  }
-}
+<script lang="ts" setup>
+import Menu from "./Menu/index.vue";
+</script>
 
+<style lang="scss" scoped>
 
 </style>

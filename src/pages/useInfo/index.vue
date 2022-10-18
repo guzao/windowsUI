@@ -1,6 +1,8 @@
 <template>
   <div>
-    用户信息
+    <n-card v-for="item in 20" :key="item" class="mb-2">
+      userinfo
+    </n-card>
   </div>
 </template>
 
